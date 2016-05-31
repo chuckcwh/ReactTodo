@@ -1,6 +1,6 @@
-# React Boilerplate 3
+# React Todo App
 
-A simple react boilerplate with test module.
+A simple Todo list.
 
 # Include:
 
