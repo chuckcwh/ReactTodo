@@ -13,6 +13,8 @@
 //
 // console.log(final);
 
+
+
 var person = ['Andrew', 25];
 var personTwo = ['Jen', 29];
 
@@ -22,6 +24,8 @@ var greet = function(name, age) {
 
 greet(...person);
 greet(...personTwo);
+
+
 
 
 var names = ['Mike', 'Ben'];
