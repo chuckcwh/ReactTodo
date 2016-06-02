@@ -1,5 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
+var {Provider} = require('react-redux');
 
 // React Router
 var {Route, Router, IndexRoute, hashHistory} = require('react-router');
@@ -26,6 +27,8 @@ ReactDOM.render(
   //   <Route path="/" component={TodoApp}>
   //   </Route>
   // </Router>,
-  <TodoApp/>,
+  <Provider store={store}>
+    <TodoApp/>
+  </Provider>,
   document.getElementById('app')
 );
