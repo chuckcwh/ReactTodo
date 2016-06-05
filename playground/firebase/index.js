@@ -72,18 +72,18 @@ firebaseRef.set({
 //
 // firebaseRef.update({isRunning: false})
 
-// var logData = (snapshot) => {
-//   console.log('Got value', snapshot.val());
-// }
-// firebaseRef.child('user').on('value', logData);
-//
-// firebaseRef.update({
-//   'user/name': 'Mike'
-// })
-//
-// firebaseRef.update({
-//   'app/name': 'some app'
-// })
+var logData = (snapshot) => {
+  console.log('Got value', snapshot.val());
+}
+firebaseRef.child('user').on('value', logData);
+
+firebaseRef.update({
+  'user/name': 'Mike'
+})
+
+firebaseRef.update({
+  'app/name': 'some app'
+})
 
 
 // Firebase save list as object with auto-generated id
